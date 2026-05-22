@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ivan David - Portafolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+   <link rel="stylesheet" href="./src/styles/globals.css">
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="mainNav">
+      <div class="nav-inner">
+        <a href="#inicio" class="logo">Nuz_v</a>
+
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+          </ul>
+
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Cambiar tema"
+          >
+            <svg class="icon-moon" viewBox="0 0 24 24">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg class="icon-sun" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </button>
+
+          <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#inicio" onclick="closeMenu()">Inicio</a>
+      <a href="#proyectos" onclick="closeMenu()">Proyectos</a>
+      <a href="#servicios" onclick="closeMenu()">Servicios</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="inicio">
+      <div class="hero-inner">
+        <div class="fade-in">
+          <p class="hero-label">Hola, soy</p>
+          <h1 class="hero-name">Ivan David Mejia Mendez</h1>
+          <p class="hero-desc">
+            Desarrollo soluciones web modernas —
+            <strong>código con pasión, impacto real</strong>.
+          </p>
+          <div class="hero-btns">
+            <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+            <a href="#servicios" class="btn-outline">Servicios</a>
+          </div>
+          <p class="hero-avail">
+            Disponibilidad: <strong>Proyectos freelance</strong>
+          </p>
+        </div>
+
+        <div class="hero-photo fade-in" style="transition-delay: 0.15s">
+          <img src="./public/img/baff10f810c5fd09802a5c62f7962f6a.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="proyectos">
+      <div class="container">
+        <h2 class="section-title fade-in">Proyectos destacados</h2>
+        <p class="section-sub fade-in">
+          Una selección breve de trabajos recientes — interfaces limpias y
+          código mantenible.
+        </p>
+
+        <div class="projects-grid">
+          <!-- SauNuz -->
+          <div class="project-card fade-in">
+            <div class="card-thumb-wrapper">
+              <div class="card-thumb-placeholder">
+                <img class="card-thumb-placeholder" src="./public/img/logo.jpg" alt="" />
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag">Proyecto personal</span>
+                <span class="tag blue">Código público</span>
+              </div>
+              <div class="card-title">SauNuz</div>
+              <p class="card-desc">
+                Aplicación web desarrollada con React y TypeScript. Arquitectura
+                de componentes escalable, tipado estático y buenas prácticas
+                modernas de desarrollo frontend.
+              </p>
+              <div class="card-techs">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">Vite</span>
+              </div>
+              <a href="https://sau-nuz.vercel.app/" target="_blank" class="card-link"
+                >Ver proyecto
+                <svg viewBox="0 0 24 24">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Thorhill Landing Page -->
+          <div class="project-card fade-in" style="transition-delay: 0.1s">
+            <div class="card-thumb-wrapper">
+              <div
+                class="card-thumb-placeholder"
+                style="
+                  background: linear-gradient(135deg, #1e293b, #334155);
+                  color: #f1f5f9;
+                  font-family: &quot;Sora&quot;, sans-serif;
+                  font-size: 1.1rem;
+                  font-weight: 800;
+                  text-align: center;
+                  line-height: 1.3;
+                "
+              >
+                THOR<br /><span style="color: #3b82f6; font-size: 1.5rem"
+                  >HILL</span
+                >
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag">Landing page</span>
+                <span class="tag blue">Código público</span>
+              </div>
+              <div class="card-title">Thorhill</div>
+              <p class="card-desc">
+                Landing page moderna con diseño limpio y atractivo. Enfocada en
+                conversión, rendimiento y experiencia visual de alto impacto
+                para el usuario final.
+              </p>
+              <div class="card-techs">
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">JavaScript</span>
+              </div>
+                  <a href="https://nuz777.github.io/Thornhill-landing-page/" target="_blank" class="card-link">
+              Ver proyecto
+              <svg viewBox="0 0 24 24">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </div>
+       </div>
+          <!-- Inventario SPA -->
+          <div class="project-card fade-in">
+            <div class="card-thumb-wrapper">
+              <div class="card-thumb-placeholder">
+                <img
+                  class="card-thumb-placeholder"
+                  src="./public/img/barcode-read-icon-inventory-management-barcode-read-icon-vector-logo-set-collection-bundle-pack-group-325659439.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="tag">SPA</span>
+                <span class="tag blue">Código público</span>
+              </div>
+              <div class="card-title">Inventario SPA</div>
+              <p class="card-desc">
+                Single Page Application de gestión de inventario construida con
+                JavaScript puro. Manejo avanzado del DOM, CRUD completo y
+                arquitectura sin frameworks.
+              </p>
+              <div class="card-techs">
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">DOM API</span>
+                <span class="tech-badge">LocalStorage</span>
+              </div>
+              <a href="https://github.com/nuz777/SPA-Products" target="_blank" class="card-link"
+                >Ver proyecto
+                <svg viewBox="0 0 24 24">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="servicios">
+      <div class="container">
+        <h2 class="section-title fade-in">Servicios</h2>
+        <p class="section-sub fade-in">
+          Soluciones que construyo con foco en calidad, rendimiento y
+          experiencia de usuario.
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card fade-in">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <div class="service-title">Desarrollo Frontend</div>
+            <p class="service-desc">
+              Interfaces modernas con React, Vue o Vanilla JS. Enfocado en
+              rendimiento, accesibilidad y código limpio y escalable.
+            </p>
+          </div>
+
+          <div class="service-card fade-in" style="transition-delay: 0.1s">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"
+                />
+              </svg>
+            </div>
+            <div class="service-title">Desarrollo Backend</div>
+            <p class="service-desc">
+              APIs RESTful y lógica de negocio robusta con Node.js o Python.
+              Bases de datos SQL y NoSQL, autenticación segura y arquitecturas
+              escalables.
+            </p>
+          </div>
+
+          <div class="service-card fade-in" style="transition-delay: 0.2s">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8M12 17v4" />
+              </svg>
+            </div>
+            <div class="service-title">Aplicaciones Full Stack</div>
+            <p class="service-desc">
+              Proyectos completos desde el diseño hasta el despliegue. Integro
+              frontend, backend y DevOps para entregar productos funcionales y
+              listos para producción.
+            </p>
+          </div>
+
+          <div class="service-card fade-in" style="transition-delay: 0.05s">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <div class="service-title">Consultoría Técnica</div>
+            <p class="service-desc">
+              Asesoría en arquitectura de software, revisión de código y mejores
+              prácticas para equipos que quieren escalar con confianza.
+            </p>
+          </div>
+
+          <div class="service-card fade-in" style="transition-delay: 0.15s">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div class="service-title">Integraciones & APIs</div>
+            <p class="service-desc">
+              Conexión de servicios externos, pasarelas de pago, sistemas de
+              autenticación OAuth y webhooks para automatizar flujos de trabajo.
+            </p>
+          </div>
+
+          <div class="service-card fade-in" style="transition-delay: 0.25s">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                />
+              </svg>
+            </div>
+            <div class="service-title">Despliegue & DevOps</div>
+            <p class="service-desc">
+              Configuración de CI/CD, contenedores Docker, despliegue en VPS o
+              cloud. Tu proyecto en producción de forma rápida y segura.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#inicio" class="footer-logo">
+              <div class="logo-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  style="width: 20px; height: 20px; fill: white"
+                >
+                  <path
+                    d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                  />
+                </svg>
+              </div>
+              Nuz
+            </a>
+            <p class="footer-tagline">
+              Desarrollo soluciones web modernas con código de calidad, foco en
+              el usuario y entrega real.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://github.com/nuz777"
+                class="social-link"
+                aria-label="GitHub"
+                target="_blank"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.1-1.49-1.1-1.49-.9-.63.07-.62.07-.62 1 .07 1.52 1.05 1.52 1.05.89 1.56 2.33 1.11 2.9.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 2.5-.34c.85 0 1.7.11 2.5.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .27.18.59.69.49C19.13 20.63 22 16.79 22 12.26 22 6.58 17.52 2 12 2z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Navegación</h4>
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#proyectos">Proyectos</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Servicios</h4>
+            <ul>
+              <li><a href="#servicios">Frontend</a></li>
+              <li><a href="#servicios">Backend</a></li>
+              <li><a href="#servicios">Full Stack</a></li>
+              <li><a href="#servicios">Consultoría</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contacto</h4>
+            <ul>
+              <li>
+                <a href="mailto:ivandavidmejiamendez@gmail.com.dev"
+                  >ivandavidmejiamendez@gmail.com</a
+                >
+              </li>
+              <li><a href="#">WhatsApp</a></li>
+              <li><a href="#">Agendar llamada</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 <a href="#">Nuz</a>. Todos los derechos reservados.</p>
+          <div class="footer-status">
+            <div class="status-dot"></div>
+            <span>Activo</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
